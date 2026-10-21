@@ -1,0 +1,18 @@
+== AVL ==
+  vazia / um elemento ok
+  duplicados ok
+  insercao asc/desc/aleatoria ok
+  remocoes (folha, 1 filho, 2 filhos, inexistente) ok
+  rotacoes ok
+  estresse (21 sementes, validacao a cada operacao) ok
+  => TODOS PASSARAM
+== Rubro-Negra ==
+  vazia / um elemento ok
+  duplicados ok
+  insercao asc/desc/aleatoria ok
+  remocoes (folha, 1 filho, 2 filhos, inexistente) ok
+  rotacoes ok
+  estresse (21 sementes, validacao a cada operacao) ok
+  => TODOS PASSARAM
+
+Verificacoes: 6334 ok, 0 falhas

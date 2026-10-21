@@ -1,0 +1,259 @@
+################ AVL: rotacao simples (caso Dir-Dir) ################
+
+ANTES (10, 20):
+    /-- 20 (fb=0)
+10 (fb=-1)
+
+-> inserir 30   (rotacoes: 1, recolorizacoes: 0)
+    /-- 30 (fb=0)
+20 (fb=0)
+    \-- 10 (fb=0)
+
+################ AVL: rotacao dupla (caso Esq-Dir) ################
+
+ANTES (30, 10):
+30 (fb=1)
+    \-- 10 (fb=0)
+
+-> inserir 20   (rotacoes: 2, recolorizacoes: 0)
+    /-- 30 (fb=0)
+20 (fb=0)
+    \-- 10 (fb=0)
+
+################ AVL: sequencia 1..7 em ordem crescente ################
+
+-> inserir 1   (rotacoes: 0, recolorizacoes: 0)
+1 (fb=0)
+
+-> inserir 2   (rotacoes: 0, recolorizacoes: 0)
+    /-- 2 (fb=0)
+1 (fb=-1)
+
+-> inserir 3   (rotacoes: 1, recolorizacoes: 0)
+    /-- 3 (fb=0)
+2 (fb=0)
+    \-- 1 (fb=0)
+
+-> inserir 4   (rotacoes: 0, recolorizacoes: 0)
+        /-- 4 (fb=0)
+    /-- 3 (fb=-1)
+2 (fb=-1)
+    \-- 1 (fb=0)
+
+-> inserir 5   (rotacoes: 1, recolorizacoes: 0)
+        /-- 5 (fb=0)
+    /-- 4 (fb=0)
+    |   \-- 3 (fb=0)
+2 (fb=-1)
+    \-- 1 (fb=0)
+
+-> inserir 6   (rotacoes: 1, recolorizacoes: 0)
+        /-- 6 (fb=0)
+    /-- 5 (fb=-1)
+4 (fb=0)
+    |   /-- 3 (fb=0)
+    \-- 2 (fb=0)
+        \-- 1 (fb=0)
+
+-> inserir 7   (rotacoes: 1, recolorizacoes: 0)
+        /-- 7 (fb=0)
+    /-- 6 (fb=0)
+    |   \-- 5 (fb=0)
+4 (fb=0)
+    |   /-- 3 (fb=0)
+    \-- 2 (fb=0)
+        \-- 1 (fb=0)
+
+################ Rubro-Negra: tio vermelho -> recolorir ################
+
+ANTES (10, 5, 15 | pai e tio vermelhos):
+    /-- 15 [R]
+10 [B]
+    \-- 5 [R]
+
+-> inserir 1   (rotacoes: 0, recolorizacoes: 4)
+    /-- 15 [B]
+10 [B]
+    \-- 5 [B]
+        \-- 1 [R]
+
+################ Rubro-Negra: tio preto -> rotacao + recolorir ################
+
+ANTES (10, 20):
+    /-- 20 [R]
+10 [B]
+
+-> inserir 30   (rotacoes: 1, recolorizacoes: 2)
+    /-- 30 [R]
+20 [B]
+    \-- 10 [R]
+
+################ Rubro-Negra: sequencia 1..7 em ordem crescente ################
+
+-> inserir 1   (rotacoes: 0, recolorizacoes: 1)
+1 [B]
+
+-> inserir 2   (rotacoes: 0, recolorizacoes: 0)
+    /-- 2 [R]
+1 [B]
+
+-> inserir 3   (rotacoes: 1, recolorizacoes: 2)
+    /-- 3 [R]
+2 [B]
+    \-- 1 [R]
+
+-> inserir 4   (rotacoes: 0, recolorizacoes: 4)
+        /-- 4 [R]
+    /-- 3 [B]
+2 [B]
+    \-- 1 [B]
+
+-> inserir 5   (rotacoes: 1, recolorizacoes: 2)
+        /-- 5 [R]
+    /-- 4 [B]
+    |   \-- 3 [R]
+2 [B]
+    \-- 1 [B]
+
+-> inserir 6   (rotacoes: 0, recolorizacoes: 3)
+            /-- 6 [R]
+        /-- 5 [B]
+    /-- 4 [R]
+    |   \-- 3 [B]
+2 [B]
+    \-- 1 [B]
+
+-> inserir 7   (rotacoes: 1, recolorizacoes: 2)
+            /-- 7 [R]
+        /-- 6 [B]
+        |   \-- 5 [R]
+    /-- 4 [R]
+    |   \-- 3 [B]
+2 [B]
+    \-- 1 [B]
+
+################ Remocao (AVL e Rubro-Negra) ################
+
+[AVL] arvore inicial (1..15):
+            /-- 15 (fb=0)
+        /-- 14 (fb=0)
+        |   \-- 13 (fb=0)
+    /-- 12 (fb=0)
+    |   |   /-- 11 (fb=0)
+    |   \-- 10 (fb=0)
+    |       \-- 9 (fb=0)
+8 (fb=0)
+    |       /-- 7 (fb=0)
+    |   /-- 6 (fb=0)
+    |   |   \-- 5 (fb=0)
+    \-- 4 (fb=0)
+        |   /-- 3 (fb=0)
+        \-- 2 (fb=0)
+            \-- 1 (fb=0)
+
+[AVL] apos remover 1 (rotacoes: 0, recolorizacoes: 0):
+            /-- 15 (fb=0)
+        /-- 14 (fb=0)
+        |   \-- 13 (fb=0)
+    /-- 12 (fb=0)
+    |   |   /-- 11 (fb=0)
+    |   \-- 10 (fb=0)
+    |       \-- 9 (fb=0)
+8 (fb=0)
+    |       /-- 7 (fb=0)
+    |   /-- 6 (fb=0)
+    |   |   \-- 5 (fb=0)
+    \-- 4 (fb=0)
+        |   /-- 3 (fb=0)
+        \-- 2 (fb=-1)
+
+[AVL] apos remover 3 (rotacoes: 0, recolorizacoes: 0):
+            /-- 15 (fb=0)
+        /-- 14 (fb=0)
+        |   \-- 13 (fb=0)
+    /-- 12 (fb=0)
+    |   |   /-- 11 (fb=0)
+    |   \-- 10 (fb=0)
+    |       \-- 9 (fb=0)
+8 (fb=0)
+    |       /-- 7 (fb=0)
+    |   /-- 6 (fb=0)
+    |   |   \-- 5 (fb=0)
+    \-- 4 (fb=-1)
+        \-- 2 (fb=0)
+
+[AVL] apos remover 8 (rotacoes: 0, recolorizacoes: 0):
+            /-- 15 (fb=0)
+        /-- 14 (fb=0)
+        |   \-- 13 (fb=0)
+    /-- 12 (fb=0)
+    |   |   /-- 11 (fb=0)
+    |   \-- 10 (fb=-1)
+9 (fb=0)
+    |       /-- 7 (fb=0)
+    |   /-- 6 (fb=0)
+    |   |   \-- 5 (fb=0)
+    \-- 4 (fb=-1)
+        \-- 2 (fb=0)
+
+[Rubro-Negra] arvore inicial (1..15):
+            /-- 15 [R]
+        /-- 14 [B]
+        |   \-- 13 [R]
+    /-- 12 [R]
+    |   |   /-- 11 [R]
+    |   \-- 10 [B]
+    |       \-- 9 [R]
+8 [B]
+    |       /-- 7 [R]
+    |   /-- 6 [B]
+    |   |   \-- 5 [R]
+    \-- 4 [R]
+        |   /-- 3 [R]
+        \-- 2 [B]
+            \-- 1 [R]
+
+[Rubro-Negra] apos remover 1 (rotacoes: 0, recolorizacoes: 0):
+            /-- 15 [R]
+        /-- 14 [B]
+        |   \-- 13 [R]
+    /-- 12 [R]
+    |   |   /-- 11 [R]
+    |   \-- 10 [B]
+    |       \-- 9 [R]
+8 [B]
+    |       /-- 7 [R]
+    |   /-- 6 [B]
+    |   |   \-- 5 [R]
+    \-- 4 [R]
+        |   /-- 3 [R]
+        \-- 2 [B]
+
+[Rubro-Negra] apos remover 3 (rotacoes: 0, recolorizacoes: 0):
+            /-- 15 [R]
+        /-- 14 [B]
+        |   \-- 13 [R]
+    /-- 12 [R]
+    |   |   /-- 11 [R]
+    |   \-- 10 [B]
+    |       \-- 9 [R]
+8 [B]
+    |       /-- 7 [R]
+    |   /-- 6 [B]
+    |   |   \-- 5 [R]
+    \-- 4 [R]
+        \-- 2 [B]
+
+[Rubro-Negra] apos remover 8 (rotacoes: 0, recolorizacoes: 0):
+            /-- 15 [R]
+        /-- 14 [B]
+        |   \-- 13 [R]
+    /-- 12 [R]
+    |   |   /-- 11 [R]
+    |   \-- 10 [B]
+9 [B]
+    |       /-- 7 [R]
+    |   /-- 6 [B]
+    |   |   \-- 5 [R]
+    \-- 4 [R]
+        \-- 2 [B]

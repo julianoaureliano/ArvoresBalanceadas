@@ -1,0 +1,177 @@
+IMD0039 - Estruturas de Dados Basicas II | Amazon Engineering Challenge
+Escolha a estrutura:
+  1) Arvore AVL
+  2) Arvore Rubro-Negra
+> 
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=0 altura=0 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Valor:   [OK] 10 inserido.
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=1 altura=1 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Valor:   [OK] 20 inserido.
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=2 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Valor:   [OK] 30 inserido.
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=3 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Valor:   [AVISO] 20 ja existe; insercao ignorada (sem duplicatas).
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=3 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Valor:   20 ENCONTRADO.
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=3 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Valor:   99 NAO encontrado.
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=3 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Valor:   [AVISO] 99 nao existe; nada removido.
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=3 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Valor:   [OK] 10 removido.
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=2 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Em ordem: 20 30
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=2 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Legenda: [R]=vermelho  [B]=preto
+    /-- 30 [R]
+20 [B]
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=2 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Estrutura: Rubro-Negra
+  Elementos: 2
+  Altura: 2
+  Rotacoes: 1
+  Recolorizacoes: 3
+  Propriedades: VALIDAS
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=2 altura=2 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Caminho do arquivo (inteiros separados por espaco/linha):   Inseridos: 6 | duplicados ignorados: 3
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=8 altura=4 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Legenda: [R]=vermelho  [B]=preto
+            /-- 80 [R]
+        /-- 70 [B]
+        |   \-- 60 [R]
+    /-- 50 [R]
+    |   \-- 40 [B]
+30 [B]
+    \-- 20 [B]
+        \-- 10 [R]
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=8 altura=4 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Em ordem: 10 20 30 40 50 60 70 80
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=8 altura=4 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Estrutura: Rubro-Negra
+  Elementos: 8
+  Altura: 4
+  Rotacoes: 2
+  Recolorizacoes: 12
+  Propriedades: VALIDAS
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=8 altura=4 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+>   Valor:   Entrada invalida: 'abc' (use inteiros).
+
+=== Amazon Logistica | Arvore atual: Rubro-Negra | n=8 altura=4 ===
+ 1) Inserir encomenda      2) Remover encomenda
+ 3) Buscar encomenda       4) Percurso em ordem
+ 5) Imprimir arvore        6) Estatisticas + validar propriedades
+ 7) Inserir varios (informe N e depois N valores)
+ 8) Carregar de arquivo    9) Trocar tipo de arvore (descarta dados)
+ 0) Sair
+> Encerrando.
